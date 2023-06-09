@@ -11,34 +11,34 @@
 
     <table>
       <tr>
-        <th>Result:</th>
-        <th>0</th>
-        <th><button id="buttonEqual">=</button></th>
+        <td>Res:</td>
+        <td id="textResult">0</td>
+        <td><button id="buttonEqual" onclick="operators('=')">=</button></td>
       </tr>
       <tr>
-        <td><button id="buttonOne">1</button></td>
-        <td><button id="buttonTwo">2</button></td>
-        <td><button id="buttonThree">3</button></td>
-        <td><button id="buttonDivision">/</button></td>
+        <td><button onclick="numbers('1')" id="buttonOne">1</button></td>
+        <td><button onclick="numbers('2')" id="buttonTwo">2</button></td>
+        <td><button onclick="numbers('3')" id="buttonThree">3</button></td>
+        <td><button onclick="operators('/')" id="buttonDivision">/</button></td>
       </tr>
       <tr>
-        <td><button id="buttonFour">4</button></td>
-        <td><button id="buttonFive">5</button></td>
-        <td><button id="buttonSix">6</button></td>
-        <td><button id="buttonMultiplication">*</button></td>
+        <td><button onclick="numbers('4')" id="buttonFour">4</button></td>
+        <td><button onclick="numbers('5')" id="buttonFive">5</button></td>
+        <td><button onclick="numbers('6')" id="buttonSix">6</button></td>
+        <td><button onclick="operators('*')" id="buttonMultiplication">*</button></td>
       </tr>
       <tr>
-        <td><button id="buttonSeven">7</button></td>
-        <td><button id="buttonEight">8</button></td>
-        <td><button id="buttonNine">9</button></td>
-        <td><button id="buttonAddition">+</button></td>
+        <td><button onclick="numbers('7')" id="buttonSeven">7</button></td>
+        <td><button onclick="numbers('8')" id="buttonEight">8</button></td>
+        <td><button onclick="numbers('9')" id="buttonNine">9</button></td>
+        <td><button onclick="operators('+')" id="buttonAddition">+</button></td>
       </tr>
       <tr>
-        <td><button id="buttonSubtracting">-</button></td>
-        <td><button id="buttonZero">0</button></td>
-        <td><button id="buttonDot">.</button></td>
+        <td><button onclick="operators('-')" id="buttonSubtracting">-</button></td>
+        <td><button onclick="numbers('0')" id="buttonZero">0</button></td>
+        <td><button onclick="numbers('.')" id="buttonDot">.</button></td>
       </tr>
     </table>
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
   </body>
 </html>
