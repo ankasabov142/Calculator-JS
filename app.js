@@ -56,7 +56,7 @@ function operators(op) {
     switch (currentOp) {
       case "+":
         res = firstNum + secondNum;
-        field.innerText = `${res}`;
+        field.innerText = `${Number(res.toFixed(2))}`;
         firstNum = 0;
         currentOp = "";
         secondNum = "";
@@ -66,7 +66,7 @@ function operators(op) {
         break;
       case "-":
         res = firstNum - secondNum;
-        field.innerText = `${res}`;
+        field.innerText = `${Number(res.toFixed(2))}`;
         firstNum = 0;
         currentOp = "";
         secondNum = "";
@@ -75,7 +75,7 @@ function operators(op) {
         break;
       case "*":
         res = firstNum * secondNum;
-        field.innerText = `${res}`;
+        field.innerText = `${Number(res.toFixed(2))}`;
         firstNum = 0;
         currentOp = "";
         secondNum = "";
@@ -84,7 +84,7 @@ function operators(op) {
         break;
       case "/":
         res = firstNum / secondNum;
-        field.innerText = `${res}`;
+        field.innerText = `${Number(res.toFixed(2))}`;
         firstNum = 0;
         currentOp = "";
         secondNum = "";
