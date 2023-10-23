@@ -19,37 +19,37 @@ function numbers(num) {
 function operators(op) {
   const field = document.getElementById("textResult");
   let result = Number(field.innerText);
-  
+
   if (op != "=") {
     if (firstNum == 0) {
       firstNum = result;
     }
 
-    if(isOpAlreadySet=true){
-        let changedOp=op;
-        currentOp = `${op}`;
+    if ((isOpAlreadySet = true)) {
+      let changedOp = op;
+      currentOp = `${op}`;
       field.innerText = "";
-      isOpAlreadySet=true;
+      isOpAlreadySet = true;
     }
 
-    
     if (currentOp == "" && op == "/") {
       currentOp = "/";
       field.innerText = "";
-      isOpAlreadySet=true;
+      isOpAlreadySet = true;
     } else if (currentOp == "" && op == "*") {
       currentOp = "*";
       field.innerText = "";
-      isOpAlreadySet=true;
+      isOpAlreadySet = true;
     } else if (currentOp == "" && op == "+") {
       currentOp = "+";
       field.innerText = "";
-      isOpAlreadySet=true;
+      isOpAlreadySet = true;
     } else if (currentOp == "" && op == "-") {
       currentOp = "-";
       field.innerText = "";
-      isOpAlreadySet=true;
+      isOpAlreadySet = true;
     }
+    //f
   } else {
     secondNum = Number(field.innerText);
     let res = "";
@@ -62,7 +62,7 @@ function operators(op) {
         secondNum = "";
         equalBool = true;
         console.log(equalBool);
-        isOpAlreadySet=false;
+        isOpAlreadySet = false;
         break;
       case "-":
         res = firstNum - secondNum;
@@ -71,7 +71,7 @@ function operators(op) {
         currentOp = "";
         secondNum = "";
         equalBool = true;
-        isOpAlreadySet=false;
+        isOpAlreadySet = false;
         break;
       case "*":
         res = firstNum * secondNum;
@@ -80,7 +80,7 @@ function operators(op) {
         currentOp = "";
         secondNum = "";
         equalBool = true;
-        isOpAlreadySet=false;
+        isOpAlreadySet = false;
         break;
       case "/":
         res = firstNum / secondNum;
@@ -89,7 +89,7 @@ function operators(op) {
         currentOp = "";
         secondNum = "";
         equalBool = true;
-        isOpAlreadySet=false;
+        isOpAlreadySet = false;
         break;
     }
   }
@@ -98,4 +98,4 @@ var firstNum = 0;
 var currentOp = "";
 var secondNum = 0;
 var equalBool = false;
-var isOpAlreadySet=false;
+var isOpAlreadySet = false;
